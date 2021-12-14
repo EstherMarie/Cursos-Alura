@@ -2,14 +2,14 @@ import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
   static numeroDeContas = 0;
-  _saldo = 0;
-
+  
   constructor(agencia, { nome, cpf }) {
     this._agencia = agencia;
     this._cliente = {
       nome: nome,
       cpf: cpf,
     };
+    _saldo = 0;
     ContaCorrente.numeroDeContas += 1;
   }
 
